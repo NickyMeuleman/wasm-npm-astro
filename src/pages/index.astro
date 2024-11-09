@@ -1,5 +1,5 @@
 ---
-
+console.log("build");
 ---
 
 <html lang="en">
@@ -14,3 +14,21 @@
 		<h1>Astro</h1>
 	</body>
 </html>
+
+<script>
+// npm import is broken, importing the same code locally works
+// import init, { solve } from "@nickymeuleman/aoc2023";
+import init, { solve } from "../../pkg/aoc2023_wasm.js";
+
+console.log("browser");
+await init();
+console.log("after wasm init");
+
+const solution = await solve(6, 3, `
+Time:        40     92     97     90
+Distance:   215   1064   1505   1100
+`.trim());
+
+console.log(solution.part1); // 6209190
+console.log(solution.part2); // 28545089
+</script>
