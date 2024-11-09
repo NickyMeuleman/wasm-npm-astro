@@ -1,0 +1,30 @@
+{
+  "name": "@nickymeuleman/aoc2023",
+  "collaborators": [
+    "Nicky Meuleman <nicky.dev@outlook.com>"
+  ],
+  "description": "Solutions to Advent of Code 2023 in Rust compiled to WebAssembly",
+  "version": "2023.12.23",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NickyMeuleman/scrapyard"
+  },
+  "files": [
+    "aoc2023_wasm_bg.wasm",
+    "aoc2023_wasm.js",
+    "aoc2023_wasm.d.ts"
+  ],
+  "module": "aoc2023_wasm.js",
+  "types": "aoc2023_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ],
+  "keywords": [
+    "AoC",
+    "advent-of-code",
+    "2023",
+    "wasm",
+    "webassembly"
+  ]
+}
